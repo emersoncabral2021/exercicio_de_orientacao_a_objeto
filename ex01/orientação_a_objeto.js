@@ -1,6 +1,9 @@
 import modificador from './modificador.js';
+import ingredientes from './ingredientes.js';
 
-var ingrendiente = [
+
+
+/*var ingrendiente = [
     'mel','água','sal','mostarda'
 ]
 
@@ -8,11 +11,7 @@ var resultadoCapitalizar = modificador.capitalizar(ingrendiente)
 var resultadoOrdenar = modificador.ordenar(resultadoCapitalizar)
 
 
-console.log(resultadoCapitalizar)
-console.log(resultadoOrdenar)
-
-
-/*function ordenado(){
+function ordenado(){
     return ingrendiente.sort(function(a,b){
     return a.localeCompare(b)
 })
