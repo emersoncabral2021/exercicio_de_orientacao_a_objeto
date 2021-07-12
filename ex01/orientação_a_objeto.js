@@ -1,13 +1,29 @@
 import modificador from './modificador.js';
-import ingredientes from './ingredientes.js';
+import ingrendientes from './ingredientes.js';
+
+
+let ingredientesOrdenados = modificador.ordenar(ingrendientes, 'nome')
+let conteinerIngredientes = document.getElementById('conteiner-ingredientes')
+
+for(let ingrediente of ingredientesOrdenados){
+    let textHTML = `<div class="ingredientes">
+    <img src="img/${ingrediente.img}" alt="">
+    <p class="nome-ingrediente">${ingrediente.nome}</p>
+</div>`;
+
+conteinerIngredientes.innerHTML += textHTML
+}
 
 
 
-/*var ingrendiente = [
-    'mel','água','sal','mostarda'
-]
 
-var resultadoCapitalizar = modificador.capitalizar(ingrendiente)
+
+
+
+
+
+/*
+var resultadoCapitalizar = modificador.capitalizar(ingrendientes)
 var resultadoOrdenar = modificador.ordenar(resultadoCapitalizar)
 
 
@@ -24,7 +40,5 @@ function capitalizar(){
 
 })  
 }
-capitalizar()
-
 */
 
