@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ingredientes{
+    padding: 1.5rem;    
+    width: 5.5rem;
+    border: 1px solid black;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: chartreuse;
+
+}
+.ingredientes img{
+    height: 4rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    
+}
+.ingredientes p{
+    margin-top: 5px;
+    text-align: center;
+}
+#conteiner-ingredientes{
+    display: flex;
+    margin-left: 5px;
+}
+
+

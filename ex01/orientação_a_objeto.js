@@ -3,11 +3,12 @@ import ingrendientes from './ingredientes.js';
 
 
 let ingredientesOrdenados = modificador.ordenar(ingrendientes, 'nome')
+let ingredientesCapitalizar = modificador.capitalizar(ingrendientes, 'nome')
 let conteinerIngredientes = document.getElementById('conteiner-ingredientes')
 
-for(let ingrediente of ingredientesOrdenados){
+for(let ingrediente of ingredientesCapitalizar){
     let textHTML = `<div class="ingredientes">
-    <img src="img/${ingrediente.img}" alt="">
+    <img src="img/${ingrediente.img}" >
     <p class="nome-ingrediente">${ingrediente.nome}</p>
 </div>`;
 
